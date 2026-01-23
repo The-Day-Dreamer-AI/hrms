@@ -1,0 +1,1 @@
+// Just checking if this file exists and exports a component 

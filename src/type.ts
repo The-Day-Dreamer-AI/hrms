@@ -1,0 +1,21 @@
+export type TUserType = {
+  annual_leave: string;
+  avatar: string;
+  birthday_leave: number;
+  branch_id: number;
+  created_at: string;
+  deleted_at?: string;
+  email: string;
+  email_verified_at?: string;
+  first_name?: string;
+  id: number;
+  joined_date: string;
+  last_name: string;
+  maternity_leave: number;
+  medical_leave: number;
+  paternity_leave: number;
+  phone: string;
+  updated_at: string;
+  roles: string[];
+  permission: string[];
+};
