@@ -1,7 +1,7 @@
 import {CircleUser, Loader2, LoaderCircle, Menu} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import React, { useRef } from "react";
-import Logo from "@/assets/img.png";
+import {brand} from "@/lib/brand";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -183,7 +183,7 @@ function LayoutTitle() {
       href="#"
       className="flex items-center gap-2 text-lg font-semibold md:text-base  w-[95px]"
     >
-      <img src={Logo} alt={"logo"} />
+      <img src={brand.logo} alt={"logo"} />
     </a>
   );
 }

@@ -9,6 +9,10 @@ import {ThemeProvider} from "@/components/theme-provider";
 import {AclProvider} from "@/auth/AclProvider.tsx";
 import {TooltipProvider} from "@/components/ui/tooltip.tsx";
 import "react-photo-view/dist/react-photo-view.css";
+import {initBrand} from "@/lib/brand";
+
+// Initialize brand-specific favicon and title
+initBrand();
 
 const queryClient = new QueryClient();
 

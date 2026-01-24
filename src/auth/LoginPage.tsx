@@ -1,7 +1,7 @@
 import {client} from "@/axios";
 import {GridPattern} from "@/components/grid-pattern.tsx";
 import {Button} from "@/components/ui/button";
-import Logo from "../assets/img.png";
+import {brand} from "@/lib/brand";
 import {
   Card,
   CardContent,
@@ -79,7 +79,7 @@ export function LoginPage({children}: {children?: React.ReactNode}) {
           fallback={
             <div className="flex items-center justify-center h-screen p-4">
               <header className="fixed top-0 left-0 w-full p-4">
-                <img src={Logo} alt="logo" className="max-w-[120px]" />
+                <img src={brand.logo} alt="logo" className="max-w-[120px]" />
               </header>
               <form
                 className="w-full max-w-sm"
