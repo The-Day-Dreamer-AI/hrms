@@ -107,7 +107,7 @@ export function LoginPage({children}: {children?: React.ReactNode}) {
                         type="email"
                         disabled={isPending}
                         name="email"
-                        placeholder="me@thedaydreamer.ai"
+                        placeholder={`me@${brand.domain}`}
                       />
                     </div>
                     <div className="grid gap-2">

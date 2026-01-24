@@ -7,6 +7,7 @@ export const brand = {
   name: import.meta.env.VITE_BRAND_NAME || "Loomi",
   logo: import.meta.env.VITE_LOGO || "/loomi-logo.png",
   favicon: import.meta.env.VITE_FAVICON || "/loomi-favicon.ico",
+  domain: import.meta.env.VITE_BASE_DOMAIN || "loomi.asia",
 };
 
 export function initBrand(): void {
