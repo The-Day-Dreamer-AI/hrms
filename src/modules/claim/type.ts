@@ -8,7 +8,7 @@ export type Claim = {
   amount: string;
   date: string;
   attachment: string;
-  attachment2?: string;
+  attachment_2?: string;
   remarks: string;
   status: string;
   utilized_limit: string;

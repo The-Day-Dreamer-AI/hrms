@@ -86,7 +86,19 @@ export const yourClaims = ({
     enableSorting: false,
     header: ({ column }) => <DataTableColumnHeader column={column} title="Attachment" />,
     cell: ({ row }) => {
-      return row?.original?.attachment ? <ViewAttachment url={row?.original?.attachment} /> : "-";
+      const hasAttachment1 = !!row?.original?.attachment;
+      const hasAttachment2 = !!row?.original?.attachment_2;
+
+      if (!hasAttachment1 && !hasAttachment2) {
+        return "-";
+      }
+
+      return (
+        <div className="flex flex-col gap-1">
+          {hasAttachment1 && <ViewAttachment url={row?.original?.attachment} index={1} />}
+          {hasAttachment2 && <ViewAttachment url={row?.original?.attachment_2} index={2} />}
+        </div>
+      );
     },
   },
   {

@@ -71,7 +71,7 @@ export function ClaimDetails() {
       date: dayjs(claim?.date).toDate(),
       remarks: claim?.remarks,
       attachment: claim?.attachment,
-      attachment2: claim?.attachment2,
+      attachment2: claim?.attachment_2,
     };
 
     form.reset(updatedValues);
@@ -94,7 +94,7 @@ export function ClaimDetails() {
         date: dayjs(data.date).format("YYYY-MM-DD"),
         remarks: data?.remarks,
         attachment: data?.attachment,
-        attachment2: data?.attachment2,
+        attachment_2: data?.attachment2,
       });
     },
   });
@@ -115,7 +115,7 @@ export function ClaimDetails() {
         date: dayjs(data.date).format("YYYY-MM-DD"),
         remarks: data?.remarks,
         attachment: data?.attachment,
-        attachment2: data?.attachment2,
+        attachment_2: data?.attachment2,
       });
     },
   });
